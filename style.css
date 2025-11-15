@@ -42,3 +42,45 @@ nav a{
     font-weight: 800;
     border-radius: 30px;
 }
+footer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    text-align:center;
+    margin:0 auto;
+}
+footer .logo{
+    height:120px;
+    width:auto;
+    margin-bottom: 40px;
+}
+footer .logos{
+    display:flex;
+}
+footer .logos img{
+    margin:16px;
+    width: 60px;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 100px;
+}
+footer .linha{
+    background-color: white;
+    opacity: 0,8;
+    width:100%;
+    height: 0,7px;
+    margin: 40px 0px;
+}
+footer .redes-sociais h4{
+    font-size:20px;
+    font-weight: 600;
+}
+footer .informações h5{
+    font-size: 18px;
+}
+footer .informações p{
+    font-size:16px;
+}
