@@ -106,7 +106,7 @@ main .p1 .conteudo .imagem-gradiente{
     background-image: 
     linear-gradient(to right, rgb(0,0,0), rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, rgb(0,0,0)),
     linear-gradient(to top, rgb(0,0,0), rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, rgb(0,0,0)),
-    url('../imagens/fundo2.jpeg');
+    url(../trabalho_ihm/imagens/fundo2.jpeg);
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
@@ -115,7 +115,7 @@ main .p1 .topo{
     position: relative;
     background: 
         linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0) 40%, rgba(0,0,0,0) 60%, rgb(0, 0, 0)), /* Degrade nas laterais */
-        url('../imagens/fundo1.png') center center / cover no-repeat;
+        url(../trabalho_ihm/imagens/fundo1.png) center center / cover no-repeat;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.404);
     min-height:100vh;
