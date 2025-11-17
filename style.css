@@ -329,3 +329,27 @@ h1#titulo2{
         margin: 40px 0;
     }
 }
+.direitP{
+    height: 300px;
+    width: 856px;
+    background-color: #FFD900;
+    display: flex;
+    justify-content: center;
+}
+.plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    background-color: black;
+}
+
+.mesicon {
+    height: 300px;             
+    width: 318px;
+    margin: 0;
+}
+.planott {
+    text-align: center;
+    margin: auto;
+}
