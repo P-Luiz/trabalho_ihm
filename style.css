@@ -106,7 +106,7 @@ main .p1 .conteudo .imagem-gradiente{
     background-image: 
     linear-gradient(to right, rgb(0,0,0), rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, rgb(0,0,0)),
     linear-gradient(to top, rgb(0,0,0), rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, rgb(0,0,0)),
-    url(../trabalho_ihm/imagens/fundo2.jpeg);
+    url(imagens/fundo2.jpeg);
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
@@ -115,7 +115,7 @@ main .p1 .topo{
     position: relative;
     background: 
         linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0) 40%, rgba(0,0,0,0) 60%, rgb(0, 0, 0)), /* Degrade nas laterais */
-        url(../trabalho_ihm/imagens/fundo1.png) center center / cover no-repeat;
+        url(imagens/fundo1.png) center center / cover no-repeat;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.404);
     min-height:100vh;
@@ -352,4 +352,70 @@ h1#titulo2{
 .planott {
     text-align: center;
     margin: auto;
+}
+.p5{
+    padding: 0px 10px;
+    background-color: black;
+    color: white;
+}
+.p5 .topo{
+    background: 
+        linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0) 30%, rgba(0,0,0,0) 70%, rgb(0, 0, 0)), /* Degrade nas laterais */
+        url(imagens/m7.JPG) center center / cover no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.404);
+    min-height:100vh;
+    padding: 20px 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+}
+.p5 h1{
+    font-size: 34px;
+}
+.p5 h2{
+    font-size: 24px;
+}
+.p5 .titulos{
+    display:flex;
+    align-items: center;
+    padding: 40px 0px;
+    gap: 15px;
+    margin-left: 55%;
+}
+.p5 .titulos hr{
+    height: 110px;
+}
+.p5 .topo img{
+    width: 218px;
+    height: 218px;
+}
+.p5 .topo .botao img{
+    border-radius: 100px;
+    width: 70px;
+    height: auto;
+    box-shadow: 0.4px 8px rgba(0,0,0,0.3);
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    z-index: 1000;
+}
+.p5 .missao{
+    display:flex;
+    align-items: center;
+    background-color: #2c2c2c;
+    border-radius: 20px;
+}
+.p5 .missao img{
+    padding: 15px 15px;
+}
+.p5 p{
+    font-size: 22px;
+    padding: 10px 40px;
+}
+.p5 .linha_meio{
+    padding-bottom: 20px;
 }
