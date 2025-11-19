@@ -67,6 +67,45 @@ footer{
     text-align:center;
     margin:0 auto;
 }
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        border-top: 1px solid rgba(0,0,0,0.15);
+        background-color: #FFD900;
+        border-radius: 8px;
+    }
+
+    nav li {
+        width: 100%;
+        margin: 0;
+        padding: 14px 0;
+        text-align: center;
+        border-bottom: 1px solid rgba(0,0,0,0.20);
+    }
+
+    nav li:last-child {
+        border-bottom: 1px solid rgba(0,0,0,0.20); 
+    }
+    .matricule-se {
+        margin-top: 0;
+        padding: 14px 0;
+        width: 80%;
+        text-align: center;
+        border-top: 1px solid rgba(0,0,0,0.20);  
+        background-color: black;
+        color: white;
+        border-radius: 0 0 8px 8px; 
+    }
+}
+
 footer .logo{
     height:120px;
     width:auto;
@@ -172,10 +211,10 @@ main .p1 .topo{
     transition: transform 0.2s ease;
 }
 .topo .botão-planos :hover{
-    background-color: white;       /* O fundo vira branco */
-    color: black;                  /* A letra vira preta */
-    transform: scale(1.05);        /* O botão aumenta 5% de tamanho */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Um brilho suave */
+    background-color: white;       
+    color: black;                  
+    transform: scale(1.05);        
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
     cursor: pointer;
 }
 
@@ -598,24 +637,23 @@ footer .logos :hover{
     }
 }
 @media (max-width: 768px) {
-    /* Remove a altura fixa da tela inicial para caber o conteúdo */
     main .p1 .topo {
         min-height: auto; 
-        padding: 100px 20px 40px 20px; /* Mais espaço no topo para não cortar */
-        background-attachment: scroll; /* Fixa bug de background no iOS */
+        padding: 100px 20px 40px 20px; 
+        background-attachment: scroll; 
     }
 
     .topo h1 {
-        font-size: 28px; /* Diminui a fonte */
+        font-size: 28px; 
     }
 
-    /* Ajusta a linha decorativa que tem largura fixa de 500px */
+    
     .topo .linha {
         width: 100%; 
         margin-bottom: 50px;
     }
 
-    /* Posiciona os botões flutuantes (WhatsApp/Gympass) de forma mais segura */
+    
     .topo .botões {
         position: fixed;
         bottom: 20px; /* Fixa no rodapé da tela */
