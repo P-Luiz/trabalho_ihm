@@ -491,6 +491,7 @@ h1#titulo2{
         width: 70%;
         max-width: 250px;
         height: auto;
+        border-radius: 20px;
     }
 
     /* Div amarela reduzida, ajusta ao conteúdo */
@@ -527,6 +528,7 @@ h1#titulo2{
 
     .mesicon {
         max-width: 200px;
+        border-radius: 18px;
     }
 }
 
