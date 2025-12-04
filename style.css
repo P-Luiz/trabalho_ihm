@@ -10,6 +10,8 @@ body{
     font-weight: 400;
 }
 header{
+    width:98%;
+    height: 45px;
     display:flex;
     justify-content: space-between;
     align-items:center;
@@ -747,4 +749,13 @@ footer .logos :hover{
         width: 100%; /* Card ocupa a largura total em telas muito pequenas */
         max-width: 300px; /* Mas não deixa ficar gigante */
     }
+}
+html {
+    scroll-behavior: smooth;
+}
+.hlanding{
+    height:45px;
+    width: 98%;
+    position: fixed;
+    z-index: 1000;
 }
