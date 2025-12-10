@@ -3,16 +3,24 @@
     padding: 0;
 }
 
-
-body{
-    margin:0;
-    font-family:"Roboto Flex",sans-serif;
+body {
+    margin: 0;
+    font-family: "Roboto Flex", sans-serif;
     font-weight: 400;
 }
-header{
-    width: 100%; 
-    height: auto; 
-    min-height: 60px; 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*HEADER (CABEÇALHO GERAL)*/
+
+
+header {
+    width: 100%;
+    height: auto;
+    min-height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,254 +28,167 @@ header{
     padding: 10px 20px;
     box-sizing: border-box;
 }
-header img{
+
+header img {
     height: 60px;
-    width:auto;
-    border:1px solid #FFD900;
+    width: auto;
+    border: 1px solid #FFD900;
     border-radius: 76px;
 }
-nav ul{
-    display:flex;
-    list-style:none;
+
+nav ul {
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
-nav li{
+
+nav li {
     margin: 25px;
-    padding:0px 10px;
-    transition:all 0.3s ease;
+    padding: 0px 10px;
+    transition: all 0.3s ease;
 }
-nav li :hover{
-    color:white;
+
+nav li :hover {
+    color: white;
 }
-nav a{
-    text-decoration:none;
-    color:black;
+
+nav a {
+    text-decoration: none;
+    color: black;
     font-weight: bold;
-    font-size:16px;
+    font-size: 16px;
 }
-.matricule-se{
-    display:block;
+
+.matricule-se {
+    display: block;
     background-color: black;
-    padding:12px 24px;
-    text-decoration:none;
-    color:white;
-    font-family:"Roboto Flex",sans-serif;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto Flex", sans-serif;
     font-weight: 800;
     border-radius: 30px;
-    transition:all 0.3s ease;
+    transition: all 0.3s ease;
 }
-.matricule-se :hover{
+
+.matricule-se :hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
-footer{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+
+
+/*FOOTER (RODAPÉ GERAL)*/
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: black;
     color: white;
     padding: 40px 20px;
-    text-align:center;
-    margin:0 auto;
-}
-@media (max-width: 768px) {
-    header {
-        flex-direction: column; 
-        align-items: center;
-        padding: 20px 10px; 
-        gap: 20px; 
-    }
-    header img {
-        width: 150px;
-        height: auto;
-    }
-    nav {
-        width: 100%;
-    }
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        background-color: transparent; 
-        border: none; 
-    }
-
-    nav li {
-        width: 100%;
-        margin: 10px 0; 
-        padding: 0;
-        text-align: center;
-        border: none;
-    }
-    nav a {
-        display: block; 
-        padding: 10px;
-        font-size: 18px;
-    }
-
-    .matricule-se {
-        width: 90%;
-        text-align: center;
-        margin-top: 10px;
-        padding: 15px 0;
-    }
-    .hlanding{
-    img{
-        width: 150px;
-        height: auto;
-    }
-    nav {
-        width: 100%;
-    }
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        background-color: transparent; 
-        border: none; 
-    }
-
-    nav li {
-        width: 100%;
-        margin: 10px 0; 
-        padding: 0;
-        text-align: center;
-        border: none;
-    }
-    nav a {
-        display: block; 
-        padding: 10px;
-        font-size: 18px;
-    }
-
-    }
-    .topo .botões {
-        position: fixed;
-        bottom: 20px;       
-        right: 15px;        
-        top: auto;          
-        left: auto;         
-        
-        display: flex;
-        flex-direction: column; 
-        gap: 15px;          
-        z-index: 9999;      
-        align-items: flex-end; 
-    }
-
-    .topo .botões img {
-        width: 50px;       
-        height: 50px;
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.5); 
-    }
-
-    .topo .botões .gympass p {
-        display: none; 
-    }
-    .topo .botões .gympass {
-        margin: 0;
-        padding: 0;
-    }
+    text-align: center;
+    margin: 0 auto;
 }
 
-footer .logo{
-    height:120px;
-    width:auto;
+footer .logo {
+    height: 120px;
+    width: auto;
     margin-bottom: 40px;
 }
-footer .logos{
-    display:flex;
+
+footer .logos {
+    display: flex;
+    transition: transform 0.2s ease;
 }
-footer .logos img{
-    margin:16px;
+
+footer .logos img {
+    margin: 16px;
     width: 60px;
     height: auto;
     border: 3px solid white;
     border-radius: 100px;
 }
-footer .linha{
+
+footer .logos :hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+footer .linha {
     background-color: white;
     opacity: 0.8;
-    width:100%;
+    width: 100%;
     height: 0.7px;
     margin: 40px 0px;
 }
-footer .redes-sociais h4{
-    font-size:20px;
+
+footer .redes-sociais h4 {
+    font-size: 20px;
     font-weight: 600;
 }
-footer .informações h5{
+
+footer .informações h5 {
     font-size: 18px;
 }
-footer .informações p{
-    font-size:16px;
+
+footer .informações p {
+    font-size: 16px;
 }
-main .p1{
+
+
+/*PÁGINA 1:*/
+
+
+main .p1 {
     padding: 3px 10px;
     color: white;
     background-color: black;
 }
-main .p1 strong{
+
+main .p1 strong {
     color: #FFD900;
 }
-main .p1 .conteudo .conteudo-texto{
-    display: flex;
-    flex-direction: column;
-    font-size:clamp(0.3rem,10vw,1.5rem);
-}
-main .p1 .conteudo{
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 2000px;
-}
-main .p1 .conteudo .imagem-gradiente{
-    width: 800px;
-    height: 500px;
-    background-image: 
-    linear-gradient(to right, rgb(0,0,0), rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, rgb(0,0,0)),
-    linear-gradient(to top, rgb(0,0,0), rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, rgb(0,0,0)),
-    url(imagens/fundo2.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
-}
-main .p1 .topo{
+
+/* Layout do Topo (Hero Section) da P1 e reutilizado na P5 */
+main .p1 .topo {
     position: relative;
-    background: 
-        linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0) 40%, rgba(0,0,0,0) 60%, rgb(0, 0, 0)), /* Degrade nas laterais */
+    background:
+        linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 60%, rgb(0, 0, 0)),
         url(imagens/fundo1.png) center center / cover no-repeat;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.404);
-    min-height:100vh;
+    min-height: 100vh;
     padding: 20px 7%;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: flex-start;
     text-align: left;
     margin: 0 auto;
 }
-.topo h1{
+
+.topo h1 {
     font-size: 32px;
     margin-bottom: 10px;
 }
-.topo h3{
+
+.topo h3 {
     font-size: 24px;
 }
-.topo .linha{
+
+.topo .linha {
     width: 500px;
     height: 3px;
-    background: 
-        linear-gradient(to right, white 40%, transparent);
+    background: linear-gradient(to right, white 40%, transparent);
     margin: 10px 0px;
     margin-bottom: 300px;
 }
-.topo .botão-planos{
-    background-color:#FFD900 ;
+
+/* Botões da P1 */
+.topo .botão-planos {
+    background-color: #FFD900;
     border: 20px solid #FFD900;
     border-radius: 24px;
     color: black;
@@ -277,26 +198,17 @@ main .p1 .topo{
     align-self: center;
     transition: transform 0.2s ease;
 }
-.topo .botão-planos :hover{
-    background-color: white;       
-    color: black;                  
-    transform: scale(1.05);        
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
+
+.topo .botão-planos :hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
 
-.topo .botões .gympass{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.topo .botões img{
-    border-radius: 100px;
-    width: 70px;
-    height: auto;
-    box-shadow: 0.4px 8px rgba(0,0,0,0.3);
-}
-.topo .botões{
+/* Botões Flutuantes (Whatsapp/Gympass) */
+.topo .botões {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -304,215 +216,78 @@ main .p1 .topo{
     right: 30px;
     z-index: 1000;
 }
-.botões img, 
+
+.topo .botões .gympass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topo .botões img {
+    border-radius: 100px;
+    width: 70px;
+    height: auto;
+    box-shadow: 0.4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.botões img,
 .botões .gympass {
     transition: transform 0.2s ease;
 }
-.botões img:hover, 
+
+.botões img:hover,
 .botões .gympass:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
     cursor: pointer;
 }
+
+/* Conteúdo P1 */
+main .p1 .conteudo {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 2000px;
+}
+
+main .p1 .conteudo .conteudo-texto {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(0.3rem, 10vw, 1.5rem);
+}
+
+main .p1 .conteudo .imagem-gradiente {
+    width: 800px;
+    height: 500px;
+    background-image:
+        linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgb(0, 0, 0)),
+        linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgb(0, 0, 0)),
+        url(imagens/fundo2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+
+/*PÁGINA 2: PLANOS*/
+
+
 .p2 {
     background-color: black;
     margin: 0 auto;
 }
-h1#centro{
+
+h1#centro {
     text-align: center;
     color: white;
     margin: 0;
     padding: 20px;
 }
-hr#p2{
+
+hr#p2 {
     margin: 0;
 }
-.aulas{
-    width: 236px;
-    height: auto; 
-    background-color: black;
-    border: 3px solid #FFD900;
-    border-radius: 36px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-    font-size: 22px;
-    padding-bottom: 20px;
-}
-.aulas img{
-    width: 100%;
-    height: auto;
-    border-radius: 36px 36px 0 0;
-    display: block;
-}
-.geral {
-    padding: 50px;
-    display: flex;
-    gap: 46px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-@media (max-width: 900px){
-    .aulas{
-        width: 200px;
-        font-size: 20px;
-    }
-
-    .geral{
-        padding: 20px;
-        gap: 30px;
-    }
-}
-
-@media (max-width: 600px){
-    .aulas{
-        width: 90%;
-        max-width: 320px; 
-        font-size: 18px;
-        border-radius: 30px;
-    }
-
-    .aulas img{
-        border-radius: 30px 30px 0 0;
-    }
-
-    .geral{
-        padding: 10px;
-        gap: 20px;
-    }
-
-    h1#centro{
-        font-size: 28px;
-    }
-}
-p#horario{
-    margin: 0;
-}
-p#professor{
-    margin: 15px 0px 0px 0px;
-}
-p#nome{
-    margin: 0;
-}
-p#aula{
-    margin: 12px 0px 15px 0px;
-}
-.linhacard{
-    margin: 15px 0px 8px 0px;
-    height: 3px;
-    background-color: white;
-}
-.p4{
-    background-color: black;
-    margin: 0px 0px;
-}
-h1#titulo1{
-    padding: 30px 0px 0px 0px;
-    color: white;
-    text-align: center;
-    margin: 0;
-}
-h1#titulo2{
-    padding: 0px 0px 20px 0px;
-    color: white;
-    text-align: center;
-    margin: 0;
-}   
-.card {
-    width: 90%;
-    height: auto;
-    background: #2c2c2c;    
-    border-radius: 52px;       
-    display: flex;            
-    align-items: center;       
-    padding: 0 45px;           
-    gap: 29px;    
-    margin: 0 auto;             
-}
-
-.card-icon {
-    height: 130px;             
-    width: auto;
-}
-
-.card-text {
-    font-size: 32px;          
-    color: white;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.dp4{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    margin: 80px 0;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.tituloamarelo {
-    color: #FFD900;
-    text-align: center;
-    margin: 30px 0;
-}
-.planos{
-    width: 294px;
-    height: 430px;
-    background-color: #2c2c2c;
-    border: 3px solid #FFD900;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-    font-size: 22px;
-    gap: 110px;
-    padding: 50px;
-}
-.planosG {
-    padding: 50px;
-    display: flex;
-    gap: 91px; 
-    flex-wrap: wrap; 
-    justify-content: center;
-}
-.linky{
-    background-color: #FFD900;
-    color: white;
-    display: flex;
-    margin: auto;
-    padding: 9px;
-    border-radius: 28px;
-}
-/* RESPONSIVIDADE REAL PARA CELULAR PAGINA 4 */
-@media (max-width: 600px) {
-
-    .card {
-        width: 90%;               
-        height: auto;             
-        flex-direction: column;   
-        padding: 20px;
-        gap: 15px;
-        border-radius: 30px;
-    }
-
-    .card-icon {
-        height: 70px;             
-    }
-
-    .card-text {
-        font-size: 22px;         
-        text-align: center;
-    }
-
-    .dp4 {
-        gap: 30px;               
-        margin: 40px 0;
-    }
-}
-/* --- DESKTOP (SEM MUDAR NADA) --- */
+/* Cards de Planos da P2 */
 .plan {
     display: flex;
     justify-content: center;
@@ -543,45 +318,471 @@ h1#titulo2{
 }
 
 
-/* --- 📱 RESPONSIVIDADE --- */
-@media (max-width: 900px) {
+/*PÁGINA 3: HORÁRIOS/AULAS*/
 
-    /* Imagem em cima e texto embaixo */
+
+.p3 {
+    background-color: black;
+    margin: 0 auto;
+}
+.geral {
+    padding: 50px;
+    display: flex;
+    gap: 46px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.aulas {
+    width: 236px;
+    height: auto;
+    background-color: black;
+    border: 3px solid #FFD900;
+    border-radius: 36px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.aulas img {
+    width: 100%;
+    height: auto;
+    border-radius: 36px 36px 0 0;
+    display: block;
+}
+
+.linhacard {
+    margin: 15px 0px 8px 0px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Textos específicos dos cards de aulas */
+p#horario {
+    margin: 0;
+}
+
+p#professor {
+    margin: 15px 0px 0px 0px;
+}
+
+p#nome {
+    margin: 0;
+}
+
+p#aula {
+    margin: 12px 0px 15px 0px;
+}
+
+/*PÁGINA 4: MARKETING/DIVULGAÇÃO*/
+
+
+.p4 {
+    background-color: black;
+    margin: 0px 0px;
+}
+
+h1#titulo1 {
+    padding: 30px 0px 0px 0px;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+h1#titulo2 {
+    padding: 0px 0px 20px 0px;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.dp4 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 80px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Cards de Vantagens da P4 */
+.card {
+    width: 90%;
+    height: auto;
+    background: #2c2c2c;
+    border-radius: 52px;
+    display: flex;
+    align-items: center;
+    padding: 0 45px;
+    gap: 29px;
+    margin: 0 auto;
+}
+
+.card-icon {
+    height: 130px;
+    width: auto;
+}
+
+.card-text {
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tituloamarelo {
+    color: #FFD900;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Planos específicos da P4*/
+.planosG {
+    padding: 50px;
+    display: flex;
+    gap: 91px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.planos {
+    width: 294px;
+    height: 430px;
+    background-color: #2c2c2c;
+    border: 3px solid #FFD900;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    gap: 110px;
+    padding: 50px;
+}
+
+.linky {
+    background-color: #FFD900;
+    color: white;
+    display: flex;
+    margin: auto;
+    padding: 9px;
+    border-radius: 28px;
+}
+
+
+/*PÁGINA 5: SOBRE/MISSÃO*/
+
+
+.p5 {
+    padding: 0px 10px;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+}
+
+.p5 .topo {
+    background:
+        linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgb(0, 0, 0)),
+        url(imagens/m7.JPG) center center / cover no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.404);
+    min-height: 100vh;
+    padding: 20px 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+}
+
+.p5 h1 {
+    font-size: 34px;
+}
+
+.p5 h2 {
+    font-size: 24px;
+}
+
+.p5 .titulos {
+    display: flex;
+    align-items: center;
+    padding: 40px 0px;
+    gap: 15px;
+    margin-left: 55%;
+}
+
+.p5 .titulos hr {
+    height: 110px;
+}
+
+.p5 .topo img {
+    width: 218px;
+    height: 218px;
+}
+
+/* Botão Whatsapp específico P5 */
+.p5 .topo .botao img {
+    border-radius: 100px;
+    width: 70px;
+    height: auto;
+    box-shadow: 0.4px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    z-index: 1000;
+}
+
+.p5 .botao {
+    transition: transform 0.2s ease;
+}
+
+.p5 .botao :hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.p5 .linha_meio {
+    padding-bottom: 20px;
+}
+
+.p5 .missao {
+    display: flex;
+    align-items: center;
+    background-color: #2c2c2c;
+    border-radius: 20px;
+}
+
+.p5 .missao img {
+    padding: 15px 15px;
+}
+
+.p5 p {
+    font-size: 22px;
+    padding: 10px 40px;
+}
+
+
+/* MEDIA QUERIES (RESPONSIVIDADE) - FEITO COM AUXILIO DE IA - */
+
+
+/*Header e Navegação (Mobile)*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    header img {
+        width: 150px;
+        height: auto;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav li {
+        width: 100%;
+        margin: 5px 0;
+        padding: 0;
+        text-align: center;
+        border: none;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .matricule-se {
+        width: 90%;
+        text-align: center;
+        margin-top: 10px;
+        padding: 15px 0;
+    }
+
+    /* Modificações Landing Page (Header responsivo) */
+    .hlanding img {
+        width: 150px;
+        height: auto;
+    }
+
+    .hlanding nav {
+        width: 100%;
+    }
+
+    .hlanding nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    .hlanding nav li {
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+        text-align: center;
+        border: none;
+    }
+
+    .hlanding nav a {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+/*Footer (Mobile)*/
+@media (max-width: 768px) {
+    footer .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/*Página 1: Index/Topo/Botões (Mobile)*/
+@media (max-width: 768px) {
+    main .p1 .topo {
+        min-height: auto;
+        padding: 100px 20px 40px 20px;
+        background-attachment: scroll;
+    }
+
+    .topo h1 {
+        font-size: 24px;
+    }
+
+    .topo h3 {
+        font-size: 16px; 
+        line-height: 1.4;
+    }
+
+    .topo .botão-planos {
+        font-size: 16px; 
+        padding: 15px 20px;
+        border-width: 10px;
+    }
+
+    main .p1 .conteudo .conteudo-texto h2 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    main .p1 .conteudo .conteudo-texto p, 
+    main .p1 .conteudo .conteudo-texto li {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .topo .linha {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    /* Botões flutuantes no mobile (horizontal) */
+    .topo .botões {
+        position: fixed;
+        bottom: 20px;
+        right: 15px;
+        top: auto;
+        left: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        z-index: 9999;
+        align-items: flex-end;
+    }
+
+    .topo .botões img {
+        width: 50px;
+        height: 50px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .topo .botões .gympass p {
+        display: none;
+    }
+
+    .topo .botões .gympass {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Conteúdo descritivo P1 */
+    main .p1 .conteudo {
+        flex-direction: column;
+    }
+
+    main .p1 .conteudo .imagem-gradiente {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+}
+
+/*Página 2: Planos (Mobile/Tablet)*/
+@media (max-width: 900px) {
     .plan {
         flex-direction: column;
         gap: 15px;
         padding: 20px 0;
+        height: auto;
+        width: 95%;
+        margin: 20px auto;
     }
 
-    /* Imagem menor e proporcional */
     .mesicon {
         width: 70%;
         max-width: 250px;
         height: auto;
         border-radius: 20px;
+        z-index: 2;
+        margin-bottom: -50px;
     }
 
-    /* Div amarela reduzida, ajusta ao conteúdo */
+    /* Div amarela reduzida */
     .direitP {
         width: 90%;
-        max-width: 380px; /* deixa menor no celular */
-        height: auto;     /* altura automática */
+        max-width: 380px;
+        height: auto;
         padding: 25px 20px;
         background-color: #FFD900;
-        border-radius: 20px;   /* bordas arredondadas */
+        border-radius: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
-    /* Texto um pouco menor para caber bonito */
     .planott {
         font-size: 1.3rem;
         line-height: 1.4;
     }
 }
 
-/* Telas MUITO pequenas */
 @media (max-width: 450px) {
     .direitP {
         max-width: 300px;
@@ -599,229 +800,133 @@ h1#titulo2{
     }
 }
 
-.p5{
-    padding: 0px 10px;
-    background-color: black;
-    color: white;
-    margin: 0 auto;
-}
-.p5 .topo{
-    background: 
-        linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0) 30%, rgba(0,0,0,0) 70%, rgb(0, 0, 0)), /* Degrade nas laterais */
-        url(imagens/m7.JPG) center center / cover no-repeat;
-    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.404);
-    min-height:100vh;
-    padding: 20px 7%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: flex-start;
-    text-align: left;
-    gap: 20px;
-}
-.p5 h1{
-    font-size: 34px;
-}
-.p5 h2{
-    font-size: 24px;
-}
-.p5 .titulos{
-    display:flex;
-    align-items: center;
-    padding: 40px 0px;
-    gap: 15px;
-    margin-left: 55%;
-}
-.p5 .titulos hr{
-    height: 110px;
-}
-.p5 .topo img{
-    width: 218px;
-    height: 218px;
-}
-.p5 .topo .botao img{
-    border-radius: 100px;
-    width: 70px;
-    height: auto;
-    box-shadow: 0.4px 8px rgba(0,0,0,0.3);
-    position: fixed;
-    right: 30px;
-    bottom: 40px;
-    z-index: 1000;
-}
-.p5 .missao{
-    display:flex;
-    align-items: center;
-    background-color: #2c2c2c;
-    border-radius: 20px;
-}
-.p5 .missao img{
-    padding: 15px 15px;
-}
-.p5 p{
-    font-size: 22px;
-    padding: 10px 40px;
-}
-.p5 .linha_meio{
-    padding-bottom: 20px;
-}
-.p5 .botao {
-    transition: transform 0.2s ease;
-}
-.p5 .botao :hover{
-    transform: scale(1.2); 
-    cursor: pointer;
-}
-footer .logos{
-    transition: transform 0.2s ease;
-}
-footer .logos :hover{
-    transform: scale(1.1);
-    cursor:pointer;
+/* Página 3: Aulas (Mobile/Tablet)*/
+@media (max-width: 900px) {
+    .aulas {
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .geral {
+        padding: 20px;
+        gap: 30px;
+    }
 }
 
-/* RESPONSIVIDADE (FEITO COM AUXILIO DE IA) */
+@media (max-width: 600px) {
+    .aulas {
+        width: 90%;
+        max-width: 320px;
+        font-size: 18px;
+        border-radius: 30px;
+    }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column; /* Coloca logo em cima e menu embaixo */
+    .aulas img {
+        border-radius: 30px 30px 0 0;
+    }
+
+    .geral {
+        padding: 10px;
+        gap: 20px;
+    }
+
+    h1#centro {
+        font-size: 28px;
+    }
+}
+
+/*  Página 4: Marketing (Mobile)*/
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
         gap: 15px;
+        border-radius: 30px;
     }
 
-    nav ul {
-        flex-direction: column; /* Itens do menu empilhados */
-        align-items: center;
-        gap: 10px;
+    h1#titulo1, h1#titulo2 {
+        font-size: 20px;
+        padding-top: 20px;
     }
 
-    nav li {
-        margin: 5px 0; /* Reduz a margem */
-    }
-    
-    /* Ajuste do footer para não ficar muito grande */
-    footer .logos {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-@media (max-width: 768px) {
-    main .p1 .topo {
-        min-height: auto; 
-        padding: 100px 20px 40px 20px; 
-        background-attachment: scroll; 
+    .card-icon {
+        height: 70px;
     }
 
-    .topo h1 {
-        font-size: 28px; 
-    }
-
-    
-    .topo .linha {
-        width: 100%; 
-        margin-bottom: 50px;
-    }
-
-    
-    .topo .botões {
-        position: fixed;
-        bottom: 20px; /* Fixa no rodapé da tela */
-        right: 20px;
-        top: auto; /* Remove o posicionamento antigo */
-        flex-direction: row; /* Coloca um ao lado do outro para ocupar menos altura */
-    }
-    
-    .topo .botões img {
-        width: 50px; /* Diminui os ícones */
-    }
-
-    /* Conteúdo descritivo */
-    main .p1 .conteudo {
-        flex-direction: column; /* Texto em cima, imagem embaixo */
-    }
-
-    main .p1 .conteudo .imagem-gradiente {
-        width: 100%; /* Ocupa a largura da tela */
-        height: 300px; /* Altura menor */
-        margin-top: 20px;
-    }
-}
-@media (max-width: 900px) { /* Breakpoint um pouco maior pois os planos são largos */
-    .biggest .plan {
-        flex-direction: column; /* Ícone em cima, texto embaixo */
-        height: auto; /* Remove altura fixa */
-        width: 95%; /* Ocupa a tela */
-        margin: 20px auto; /* Centraliza */
-    }
-
-    .mesicon {
-        width: 150px; /* Diminui o ícone */
-        height: auto;
-        margin-bottom: -50px; /* Ajuste visual se necessário */
-        z-index: 2;
-    }
-
-    .direitP {
-        width: 100%; /* Remove os 856px fixos */
-        height: auto;
-        padding: 40px 10px;
+    .card-text {
+        font-size: 16px;
         text-align: center;
     }
-    
-    .planott {
-        font-size: 18px; /* Ajusta tamanho da fonte do preço */
+
+    .tituloamarelo {
+        font-size: 16px;
+        margin: 20px 10px;
+        line-height: 1.4;
+    }
+
+    .p4 h1#centro {
+        font-size: 14px; 
+        line-height: 1.5;
+        padding: 10px 15px;
+        text-align: justify;
+    }
+
+    .planos {
+        width: 100%; 
+        height: auto; 
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .dp4 {
+        gap: 30px;
+        margin: 40px 0;
     }
 }
+
+/*  Página 5: Missão (Mobile)  */
 @media (max-width: 768px) {
     .p5 .topo {
-        align-items: center; /* Centraliza tudo */
+        align-items: center;
         text-align: center;
     }
 
     .p5 .titulos {
-        margin-left: 0; /* Remove a margem enorme */
-        flex-direction: column; /* Empilha os textos */
+        margin-left: 0;
+        flex-direction: column;
         padding: 20px 0;
     }
 
     .p5 .titulos hr {
-        display: none; /* Esconde a linha vertical no celular */
+        display: none;
     }
 
-    /* Seção Missão */
     .p5 .missao {
-        flex-direction: column-reverse; /* Imagem em cima ou embaixo do texto */
+        flex-direction: column-reverse;
         height: auto;
     }
 
     .p5 .missao img {
-        width: 100%; /* Imagem responsiva */
+        width: 100%;
         height: auto;
     }
 
     .p5 p {
-        padding: 20px; /* Reduz padding lateral */
+        padding: 20px;
         font-size: 18px;
     }
 }
-@media (max-width: 600px) {
-    .geral {
-        padding: 20px 10px;
-        gap: 20px;
-    }
-    
-    .aulas {
-        width: 100%; /* Card ocupa a largura total em telas muito pequenas */
-        max-width: 300px; /* Mas não deixa ficar gigante */
-    }
-}
-html {
-    scroll-behavior: smooth;
-}
-.hlanding{
-    width: 100%; 
-    height:auto; 
-    min-height: 60px; 
+
+
+/* LANDING PAGE*/
+
+
+.hlanding {
+    width: 100%;
+    height: auto;
+    min-height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
